@@ -1,0 +1,4 @@
+git log FETCH_HEAD
+git log FETCH_HEAD
+git log FETCH_HEAD
+git log FETCH_HEAD
