@@ -6,20 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="paho pankoue">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="../Votre_FavIcon.png" type="image/x-icon">
     <title>formulaire O'Tablier</title>
 </head>
 
 <body>
-    <style>
-        .myImage img {
-            width: 400px;
-            height: 400px;
-            flex: 4;
-            margin: 20px;
-        }
-    </style>
     <div class="myImage">
         <img src="<?php echo "ImagesRecette/" . $_FILES['photo']['name'] ?>">
     </div>
@@ -27,9 +19,10 @@
         <img src="<?php
                     echo $photo; ?>">
     </div> -->
-
     <?php
     // print_r($_POST);
+
+
 
     //Etape Nom
     if (isset($_POST['NomRecette'])) //On regarde si les variables existent, sinon la condition ne sera pas validée
@@ -69,19 +62,7 @@
     if (isset($_POST['temps2'])) {
         echo htmlentities($_POST['temps2']) . '<br>';
     }
-    // Etape temps
-    if (isset($_POST['temps3'])) {
-        echo htmlentities($_POST['temps3']) . '<br>';
-    }
-    // Etape temps
-    if (isset($_POST['temps4'])) {
-        echo htmlentities($_POST['temps4']) . '<br>';
-    }
-    // Etape temps
-    if (isset($_POST['temps5'])) {
-        echo htmlentities($_POST['temps5']) . '<br>';
-    }
-    // Etape NBPesronne
+
     if (isset($_POST['NBPeronne'])) {
         echo htmlentities($_POST['NBPersonne']) . '<br>';
     }
@@ -170,7 +151,6 @@
             echo "le fichier n'est pas une image";
         }
     }
-
 
 
     ?>
